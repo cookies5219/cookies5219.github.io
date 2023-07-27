@@ -1,0 +1,57 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  color: #dcddde; /* Default text color */
+  background-color: #36393f; /* Default background color */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff; /* Text color in dark mode */
+    background-color: #202225; /* Background color in dark mode */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; /* Heading text color */
+}
+
+a {
+  color: #b9bbbe; /* Link text color */
+}
+
+a:hover {
+  color: #fff; /* Hovered link text color */
+}
+
+p {
+  color: #dcddde; /* Paragraph text color */
+}
+
+/* Example of styling a specific element */
+.button {
+  background-color: #7289da; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* Example of styling a specific element on dark mode */
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: #4e5d94; /* Button background color in dark mode */
+  }
+}
+@font-face {
+  font-family: 'Whitney';
+  src: url('Whitney-Normal-300.woff2') format('woff2');
+  /* Add more src declarations for other font file formats (e.g., woff, ttf, etc.) if available */
+}
+
+body {
+  font-family: 'Whitney', Arial, sans-serif; /* Use the custom font as the preferred font */
+}
